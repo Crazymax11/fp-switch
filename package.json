@@ -1,12 +1,13 @@
 {
   "name": "fp-switch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Switch for fp purposes",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js",
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "cross-env NODE_ENV=dev webpack --progress --colors --watch"
+    "dev": "cross-env NODE_ENV=dev webpack --progress --colors --watch",
+    "prepublish": "test && build"
   },
   "repository": {
     "type": "git",
