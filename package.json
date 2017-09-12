@@ -1,0 +1,40 @@
+{
+  "name": "fp-switch",
+  "version": "1.0.0",
+  "description": "Switch for fp purposes",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js",
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "cross-env NODE_ENV=dev webpack --progress --colors --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Crazymax11/fp-switch.git"
+  },
+  "keywords": [
+    "fp",
+    "switch"
+  ],
+  "author": "Max Sosnov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crazymax11/fp-switch/issues"
+  },
+  "homepage": "https://github.com/Crazymax11/fp-switch",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "cross-env": "^5.0.5",
+    "eslint": "^4.6.1",
+    "eslint-plugin-prettier": "^2.2.0",
+    "prettier": "^1.6.1",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.5.6"
+  }
+}
