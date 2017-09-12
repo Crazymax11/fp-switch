@@ -34,4 +34,9 @@ describe('Functional switch', function() {
         fpSwitch('default value', {3: (v) => used = v}, 3);
         (used).should.be.equal(3);
     });
+
+    it('should run defaultcase if default case is function', function () {
+        const defaultCase = () => true;
+        fpSwitch(defaultCase, {2: 3}, 3).should.be.true;
+    })
 });
