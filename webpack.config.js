@@ -24,7 +24,7 @@ var config = {
     ]
   },
   plugins: [
-    new UglifyJSPlugin({ minimize: true })
+    new UglifyJSPlugin({ minimize: true, sourceMap: true })
   ]
 };
 
