@@ -1,7 +1,8 @@
 var webpack = require('webpack');
 var path = require('path');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 var libraryName = 'fp-switch';
-var outputFile = libraryName + '.js';
+var outputFile = libraryName + '.min.js';
 
 var config = {
   entry: __dirname + '/src/index.js',
@@ -23,14 +24,8 @@ var config = {
     ]
   },
   plugins: [
-
+    new UglifyJSPlugin({ minimize: true })
   ]
 };
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
-
-if (process.env.NODE_ENV === 'production') {
-    config.plugins.push(new UglifyJSPlugin({ minimize: true }));
-    config.output.filename = libraryName + '.min.js';
-}
 
 module.exports = config;

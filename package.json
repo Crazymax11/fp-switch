@@ -1,6 +1,6 @@
 {
   "name": "fp-switch",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Switch for fp purposes",
   "main": "index.js",
   "scripts": {
@@ -24,14 +24,14 @@
   },
   "homepage": "https://github.com/Crazymax11/fp-switch",
   "dependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^3.5.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
+    "chai": "^4.1.2",
     "cross-env": "^5.0.5",
+    "mocha": "^3.5.3",
     "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.5.6"
   }
